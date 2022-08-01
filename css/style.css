@@ -74,10 +74,12 @@ nav {
 
 }
 
-
-
-
  .article__img{
+   max-width:70%;
+ max-height:70%;
+}
+
+.proyecto1__img{
    max-width:70%;
  max-height:70%;
 }
@@ -161,6 +163,8 @@ footer{
    text-align: center;
 
 }
+
+
 
  .formulario__nombre{
    grid-area: nombre;
@@ -279,7 +283,7 @@ footer{
   #grilla3{
    display: grid;
    grid-template-columns: 30% auto 50% ;
-   grid-template-rows: auto 30% 137% 21%;
+   grid-template-rows: auto 30% 137% 22%;
 
    grid-template-areas:
    "header nav nav"
