@@ -125,10 +125,21 @@ section#seccion__dos{
 
 }
 
+section#img__proyectos{
+   grid-area: img-proyectos;
+}
+
+#descripcion__proyectos{
+   grid-area: desc-proyectos;
+}
+
 .proyecto1__img {transition: all 2s;}
 .proyecto1__img:hover {filter: grayscale(0);transform: scale(1.5);}
 .proyecto1__imgcont {overflow: hidden;}
 
+aside.formulario__contacto{
+   grid-area: formulario;
+}
 
 .formulario__nombre{
   grid-area: nombre;
@@ -163,19 +174,20 @@ section#seccion__dos{
   #grilla1{
      display: grid;
      grid-template-columns: auto;
-     grid-template-rows: auto 101% auto;
+     grid-template-rows: 10% 55% 70% 10%;
  
      grid-template-areas:
      "header"
+     "presentacion"
      "foto"
-     "presentacion";
+     "footer";
 
     }
  
   #grilla2{
     display: grid;
     grid-template-columns: auto ;
-    grid-template-rows: auto 406% auto;
+    grid-template-rows: auto 194% auto;
  
     grid-template-areas:
     "header"
@@ -186,19 +198,20 @@ section#seccion__dos{
    #grilla3{
      display: grid;
      grid-template-columns: auto  ;
-     grid-template-rows: auto 30% 140% 26%;
+     grid-template-rows: 10% 37% 50% 50% 10%;
   
      grid-template-areas:
      "header"
      "titulo"
-     "proyectos"
+     "img-proyectos"
+     "desc-proyectos"
      "footer";
     }
   
     #grilla4{
      display: grid;
      grid-template-columns: auto ;
-     grid-template-rows: auto 300% 41%;
+     grid-template-rows: 30 150% 30%;
   
      grid-template-areas:
      "header "
@@ -220,9 +233,10 @@ section#seccion__dos{
   }
 
  }
+
  
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px){
 #grilla1{
    display: grid;
    grid-template-columns: 30% auto 45% ;
